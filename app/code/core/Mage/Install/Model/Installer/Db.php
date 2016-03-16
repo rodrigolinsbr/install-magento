@@ -84,11 +84,11 @@ class Mage_Install_Model_Installer_Db extends Mage_Install_Model_Installer_Abstr
             }
 
             // check InnoDB support
-            if (!$resource->supportEngine()) {
-                Mage::throwException(
-                    Mage::helper('install')->__('Database server does not support the InnoDB storage engine.')
-                );
-            }
+            // if (!$resource->supportEngine()) {
+            //     Mage::throwException(
+            //         Mage::helper('install')->__('Database server does not support the InnoDB storage engine.')
+            //     );
+            // }
 
             // TODO: check user roles
         }
